@@ -7,6 +7,7 @@ import networkx as nx
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 
+
 # Create your views here.
 def home(request):
     return render(request,'home.html',{})
