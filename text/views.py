@@ -2,8 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import redirect, render
 from .models import *
 import nltk
-import numpy as np
-import networkx as nx
+nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 
