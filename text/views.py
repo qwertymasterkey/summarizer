@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render
 from django.shortcuts import redirect, render
 from .models import *
@@ -68,3 +69,5 @@ def action(request):
         return render (request,'home.html',context={'text':text,'summary':summary,'count1':count2,'res':res1})
     else:
         return render(request,'home.html',{'summary':""})
+def sample(request):
+    return render(request,'sample.html',{})

@@ -25,9 +25,10 @@
 <meta name="robots" content="noindex, follow">
 </head>
 <body class="contact1" >
-  
   <div class="contact1-pic js-tilt " style="margin-left: auto;margin-right: auto;width: 20%;" >
-    <img src="{% static 'text/images/img-01.png' %}" alt="IMG"></div>
+    <img src="{% static 'text/images/img-01.png' %}" alt="IMG">
+  </div>
+  <a href="sample" style="margin-left: auto;margin-right: auto;width: 20%;" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Sample Passage</a>
 <div class="contact1" >
 <div class="container-contact1" >
   {% if summary %}
@@ -47,10 +48,10 @@
 <form class="contact1-form validate-form" action="output" method="POST">
   {% csrf_token %}
 <span class="contact1-form-title" style="margin-top: 20px;" >
-Summarize Passage:
+Summarize Passage
 </span>
 <div class="wrap-input1 validate-input"  data-validate="Message is required">
-<textarea class="input1" name="message" rows="30" style="width:750px " placeholder="Passage"></textarea>
+<textarea class="input1" name="message" rows="30" style="width:750px " placeholder="Paste a long Passage"></textarea>
 <span class="shadow-input1"></span>
 
 </div>
